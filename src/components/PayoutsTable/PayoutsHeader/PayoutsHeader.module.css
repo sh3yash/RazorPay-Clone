@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a2233;
+  padding: 8px 12px; /* Reduced padding */
+  color: white;
+  border-bottom: 2px solid #0f172a; /* Dark blue shade */
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.tabGroup {
+  display: flex;
+  margin-left: 12px; /* Reduced margin */
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: #8c8c8c;
+  padding: 6px 10px; /* Reduced padding */
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.tab:hover {
+  color: white;
+  border-bottom: 2px solid #3474eb;
+}
+
+.tab.active {
+  color: white;
+  border-bottom: 2px solid #3474eb;
+}
+
+.tab.new::after {
+  content: 'NEW';
+  font-size: 0.6em;
+  background-color: rgb(35, 159, 35);
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin-left: 4px; /* Reduced margin */
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px; /* Slightly reduced font size */
+  cursor: pointer;
+  margin-right: 8px; /* Reduced margin */
+}
+
+.iconButton:hover {
+  color: #3474eb;
+}
+
+.payoutButton {
+  background-color: #3474eb;
+  color: white;
+  border: none;
+  padding: 8px 12px; /* Reduced padding */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.payoutButton:hover {
+  background-color: #2858a0;
+}
